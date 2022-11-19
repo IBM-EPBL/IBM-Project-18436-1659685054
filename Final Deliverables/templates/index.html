@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	<title>University Admit Eligibility Predictor</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+	h1,h2{
+		font-family: 'Raleway', sans-serif;
+		color: black;
+		font-size:larger;
+	}
+	h2,h1,form,p,b{
+		text-align: left;
+		color: black;
+		font-size:larger;
+	}
+	label,p,b{
+		font-family: 'Noto Sans HK';
+		font-size:larger; 
+		color: black;
+	}
+	.elements{
+		padding-top: 2px;
+		
+	}
+
+</style>
+<style>
+body{ 
+background-image:url("https://burst.shopifycdn.com/photos/grad-cap-diploma-and-stacked-books.jpg?width=1200&format=pjpg&exif=1&iptc=1");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+ </style>
+ 	
+	<h1 style="font-size: 4rem; text-decoration-line: underline; text-decoration-thickness: auto;text-align:center;color:blue;">University Admit Eligibility Predictor</h1>
+	<br>
+	<br>
+	<p style="font-size: 2rem; font-family: 'Raleway', sans-serif;"> <strong> ABOUT </strong></p>
+	<p style="font-size: 2rem; font-family: 'Raleway', sans-serif;">Enter your details to predict whether you'll get an admission or not .</p>
+
+	<form action="/predict" method="post" class="elements" style="font-size: 1rem;">
+		<p style="font-size:1.7rem; font-family: 'Raleway', sans-serif;"> <b><strong> DETAILS </strong></font></p>
+		<p class="elements"><b>GRE Score (Score range 0-340)</p>
+		<p><input type="text" name="gre"style=" border-radius: 50px;width:250px;height:20px;"></p>
+		<p class="elements">TOEFL Score (Score range 0-120)</p>
+		<p><input type="text" name="tofl"  style=" border-radius: 50px;width:250px;height:20px;"></p>
+		<p class="elements"><label>University Rating (give rating from 1 to 5)</label> </p>
+		
+<select name="rating" style=" border-radius: 50px;width:250px;height:20px;">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+        </select>
+		<br>
+		<p class="elements">SOP (Score range 0-5)</p>
+		<p><input type="text" name="sop"  style=" border-radius: 50px;width:250px;height:20px;"></p>
+		<p class="elements">LOR (Score range 0-5)</p>
+		<p><input type="text" name="lor"  style=" border-radius: 50px;width:250px;height:20px;"></p>
+		<p class="elements">CGPA (Score range 0-10)</p>
+		<p><input type="text" name="cgpa" style=" border-radius: 50px;width:250px;height:20px;"></p>
+		<p class="elements"><label>Research</label></p>
+		<select name="research" style=" border-radius: 50px;width:250px;height:20px;">
+			<option value="Yes">1</option>
+			<option value="No">0</option>
+        </select>
+
+        
+
+		
+		<p> <input type = "submit" value = "Predict"style=" button: 20px; font-size:40px;color:Green;" /> </p>
+		
+	</form>
+
+
+</body>
+</html>
